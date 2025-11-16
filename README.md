@@ -1,1 +1,1 @@
-# Handwritten Digit Recognition using Neural Networks in Ptyhon.
+# Handwritten Digit Recognition using Neural Networks in PyTorch.
