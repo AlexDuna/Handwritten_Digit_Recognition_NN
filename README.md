@@ -152,10 +152,5 @@ Where:
 ### Final Prediction Process:
 ```Input Layer -> Neural Network -> Prediction Output```
 
-## Last step, was to create a GUI, where the user can draw a digit, and get a prediction
+## Last step, was to create a GUI with Tkinter, where the user can draw a digit, and get a prediction
 Pretty Cool :)
-  
-
-  
-
- 
