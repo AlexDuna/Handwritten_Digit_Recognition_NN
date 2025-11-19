@@ -40,7 +40,7 @@ This will create a file:
 
 
 
-# Quick snippet of how the algorithm actually works
+# How the algorithm actually works
 <img src="/Images/Algorithm_Representation.png" alt="isolated"/>
 
 ## Handwritten Digit Recognition is a classification problem, where the goal is to correctly identify digits [0-9] from images.
