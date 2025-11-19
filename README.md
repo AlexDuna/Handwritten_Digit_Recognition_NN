@@ -30,18 +30,18 @@ This will create a file:
 
 - The GUI should look like this:
 - Default:
-<img src="/Images/GUI.png" alt="isolated" width="200"/>
+<img src="/Images/GUI.png" alt="isolated"/>
 
 - Prediction 1:
-<img src="/Images/Example1_GUI.png" alt="isolated" width="200"/>
+<img src="/Images/Example1_GUI.png" alt="isolated"/>
 
 - Prediction 2:
-<img src="/Images/Example2_GUI.png" alt="isolated" width="200"/>
+<img src="/Images/Example2_GUI.png" alt="isolated"/>
 
 
 
-## Quick snippet of how the algorithm actually works
-<img src="/Images/Algorithm_Representation.png" alt="isolated" width="200"/>
+# Quick snippet of how the algorithm actually works
+<img src="/Images/Algorithm_Representation.png" alt="isolated"/>
 
 ## Handwritten Digit Recognition is a classification problem, where the goal is to correctly identify digits [0-9] from images.
 - **Dataset: MNIST**
@@ -52,7 +52,7 @@ This will create a file:
 - Labels range from **0 to 9**
 
 ### Examples of MNIST dataset:
-<img src="/Images/MNIST_dataset.png" alt="isolated" width="200"/>
+<img src="/Images/MNIST_dataset.png" alt="isolated"/>
 
 ## Step 1: Preprocess the Data
 - before giving the images to a neural network, we need to **preprocess** them:
@@ -65,10 +65,10 @@ This will create a file:
 
 **Before and after flattening:**
 ```Original (28x28)``` -> ```Flattened (1x784)```
-<img src="/Images/Flatten.png" alt="isolated" width="200"/>
+<img src="/Images/Flatten.png" alt="isolated"/>
 
 - So 784 pixels go as input of a Neural Network:
-<img src="/Images/NN_input.png" alt="isolated" width="200"/>
+<img src="/Images/NN_input.png" alt="isolated"/>
 
 ## Step 2: Building the Neural Network
 A **Neural Network** consists of:
@@ -77,7 +77,7 @@ A **Neural Network** consists of:
 3. **Output Layer** - 10 neurons for digits 0-9
 
 So the Neural Network looks like:
-<img src="/Images/Layers.png" alt="isolated" width="200"/>
+<img src="/Images/Layers.png" alt="isolated"/>
 ```Input (784)``` -> ```Hidden Layer``` -> ```Output (10)```
 
 Detailing:
@@ -94,19 +94,19 @@ Hidden Layers contain **neurons** that apply **weights1 and activation functions
 - In code, I used:
   - ```nn.Linear``` for **weights** and **bias**
   - **ReLU** (**Rectified Linear Unit**) to introduce **non-linearity**
-<img src="/Images/ReLU.png" alt="isolated" width="200"/>
+<img src="/Images/ReLU.png" alt="isolated"/>
 
 - Formula:
-<img src="/Images/hidden_layer_formula.png" alt="isolated" width="200"/>
+<img src="/Images/hidden_layer_formula.png" alt="isolated"/>
 
 - For a better understanding, here is an image example for a single neuron:
-<img src="/Images/Single_Neuron.png" alt="isolated" width="200"/>
+<img src="/Images/Single_Neuron.png" alt="isolated"/>
 
 ### Output Layer:
 - Is the final layer that contains **10 neurons** (one for each digit 0-9)
 - In the code, for this algorithm I used ```CrossEntropyLoss```, in PyTorch it internally applies **Softmax** to convert the raw outputs into probabilities in the range ```[0, 1]```
 - This activation function converts outputs into **probabilities in range of 0-1**
-<img src="/Images/Softmax.png" alt="isolated" width="200"/>
+<img src="/Images/Softmax.png" alt="isolated"/>
 
 Example for Output Probabilities:
 ```
@@ -130,18 +130,18 @@ Example for Output Probabilities:
 
 ### Loss Function (Cross-Entropy)
 The difference between the predicted and actual output is calculated using **cross-entropy loss**:
-<img src="/Images/Cross_Entropy.png" alt="isolated" width="200"/>
+<img src="/Images/Cross_Entropy.png" alt="isolated"/>
 
 Where:
-<img src="/Images/Cross_Entropy_Expl.png" alt="isolated" width="200"/>
+<img src="/Images/Cross_Entropy_Expl.png" alt="isolated"/>
 
 ### Backpropagation & Optimization
 - **Backpropagation** updates weights using **gradient descent**
 - **Optimization Algorithm: Adam**
   - **Gradient Descent:**
-<img src="/Images/Gradient_Descent.png" alt="isolated" width="200"/>
+<img src="/Images/Gradient_Descent.png" alt="isolated"/>
 Where:
-<img src="/Images/Gradient_Descent_Expl.png" alt="isolated" width="200"/>
+<img src="/Images/Gradient_Descent_Expl.png" alt="isolated"/>
 
 ## Step 4: Testing & Prediction
 - Trained model is tested on unseen data
