@@ -78,7 +78,7 @@ A **Neural Network** consists of:
 
 So the Neural Network looks like:
 <img src="/Images/Layers.png" alt="isolated"/>
-```Input (784)``` -> ```Hidden Layer``` -> ```Output (10)```
+- ```Input (784)``` -> ```Hidden Layer``` -> ```Output (10)```
 
 Detailing:
 ### Input Layer:
@@ -133,6 +133,7 @@ The difference between the predicted and actual output is calculated using **cro
 <img src="/Images/Cross_Entropy.png" alt="isolated"/>
 
 Where:
+
 <img src="/Images/Cross_Entropy_Expl.png" alt="isolated"/>
 
 ### Backpropagation & Optimization
